@@ -22,7 +22,7 @@ public class JacksonDatabindJsonDemoApplication {
 			ObjectMapper mapper = new ObjectMapper();
 
 			//read json file and convert to Java POJO
-			Student myStudent = mapper.readValue(new File("data/sample-lite.json"), Student.class);
+			Student myStudent = mapper.readValue(new File("data/sample-full.json"), Student.class);
 
 			//print
 			System.out.println(myStudent);
